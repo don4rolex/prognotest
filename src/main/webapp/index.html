@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Information</title>
+  <script type="text/javascript" src="script/weather.js"></script>
+</head>
+<body onload="getLocation()">
+<h1 align="center">Weather Information</h1>
+<div align="center">
+  <label for="latitude">Latitude:</label>
+  <input type="text" id="latitude">
+  <label for="longitude">Longitude:</label>
+  <input type="text" id="longitude">
+  <button onclick="getWeatherInformation()">Get Weather</button>
+</div>
+<br>
+<table id="weatherTable" align="center" border="1">
+  <tr>
+    <th>Country Code</th>
+    <th>Station Name</th>
+    <th>Weather Condition</th>
+    <th>Temperature</th>
+    <th>Wind Speed</th>
+    <th>Wind Direction</th>
+    <th>Humidity</th>
+    <th>Date</th>
+  </tr>
+</table>
+</body>
+</html>
